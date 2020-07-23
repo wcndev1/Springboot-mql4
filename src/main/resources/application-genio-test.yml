@@ -1,0 +1,17 @@
+spring:
+  profiles: genio-test
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://us-cdbr-east-02.cleardb.com:3306/heroku_89093911458d583?useSSL=false
+    username: b9315134eae784
+    password: fe27d7c3
+    driverClassName: com.mysql.jdbc.Driver
+    hikari:
+      maximumPoolSize: 10
+      connectionTimeout: 15000
+      idleTimeout: 30000 
+
+server:
+  port: 8080
+  servlet:
+    context-path: /GenioMql4
